@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./app.js" type="module"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <buttom class="mode" type="submit">Dark theme</buttom>
+
+        <section class="heading-logo">
+            <h1 class="heading">Bulls and Cows</h1>
+            <img src="/2.webp" alt="Bulls&Cows" />
+        </section>
+        <div class="wrapper">
+            <div class="first-div">
+                <section class="game-input-buttons">
+                    <input class="player-number" type="number" name="number" placeholder="Enter guess" />
+                    <button class="submit" type="submit">Submit</button>
+                    <button class="new-game" type="submit">New Game</button>
+                </section>
+                <section class="game-info">
+                    <article class="game-rules">
+                        <h3 class="rules-heading">Game rules:</h3>
+                        <p class="rules-text"> Bulls and Cows is a logic game. </p>
+                        <p class="rules-text"> The computer generates five digit number and the player tries to gues
+                            it.
+                        </p>
+                        <p class="rules-text">
+                            The numbers have to be with
+                            five
+                            digits and the
+                            digits
+                            must be all different.
+                        </p>
+                        <p class="rules-text">At each turn the player tries a five digit number, and the computer says
+                            how
+                            close it is to the answer by giving:</p>
+                        <ul class="rules-list">
+                            <li>The number of Bulls - digits correct in the right position.</li>
+                            <li>The number of Cows - digits correct but in the wrong position.</li>
+                        </ul>
+                    </article>
+                    <article class="learn-more">
+                        <a href="https://en.wikipedia.org/wiki/Bulls_and_Cows" target="_blank">Learn more about the
+                            game</a>
+                    </article>
+                    <article class="game-example">
+                        <h3 class="example-heading">Example:</h3>
+                        <p class="example-text">If the number is 12345 and your guess is 12354. </p>
+                        <p class="example-text">1,
+                            2, 3 are
+                            bulls
+                            and 5, 4 are cows.
+                            Basically in this case you have 3 bulls and 2 cows. Your goal - 5 Bulls !</p>
+                    </article>
+
+                </section>
+            </div>
+            <div class="second-div">
+                <section class="game-results">
+                    <h3>Previous guesses</h3>
+                    <ul class="guess-result"></ul>
+                </section>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
