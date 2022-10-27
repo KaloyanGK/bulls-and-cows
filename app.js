@@ -15,7 +15,7 @@ function newGame(e) {
     location.reload()
 }
 submitButton.addEventListener('click', submitNumber);
-
+console.log(computerNumber);
 function submitNumber(e) {
     let resultLi = document.createElement('li');
     let guess = input.value.split('').map(Number);
