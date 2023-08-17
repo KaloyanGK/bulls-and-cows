@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Montserrat", sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+.container {
+  width: 100rem;
+  margin: 0 auto;
+  padding: 0 4rem;
+  border:0.1rem solid black;
+  padding:2rem;
+}
+.main-content {
+  margin-top: 3rem;
+  display: flex;
+  gap: 1rem;
+}
+.main-content-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.img-wrapper {
+  width: 40rem;
+}
+.img-wrapper img {
+  width: 100%;
+}
+.mode {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+  border: 0.1rem solid black;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.main-content-left-side-buttons {
+  display: flex;
+  gap: 2rem;
+}
+.player-number {
+  margin-left: 0.5rem;
+  border-radius: 1.5rem;
+  border: 0.2rem solid black;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.submit {
+  background: linear-gradient(to bottom, #44c767 5%, #639d46 100%);
+  border-radius: 2rem;
+  cursor: pointer;
+  color: black;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  text-shadow: 0rem 0.1rem 0rem #2f6627;
+}
+
+.submit:hover {
+  background: linear-gradient(to bottom, #5cbf2a 5%, #44c767 100%);
+  background-color: #5cbf2a;
+}
+
+.submit:active {
+  position: relative;
+  top: 0.2rem;
+}
+.new-game {
+  background: linear-gradient(to bottom, #dd901d 5%, #f05107 100%);
+  background-color: #ffec64;
+  border-radius: 2rem;
+
+  cursor: pointer;
+  color: black;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  text-shadow: 0rem 0.1rem 0rem #2f6627;
+}
+
+.new-game:hover {
+  background: linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+  background-color: #ffab23;
+}
+
+.new-game:active {
+  position: relative;
+  top: 0.2rem;
+}
+.main-content-left-side-rules {
+  margin-top: 3rem;
+}
+.main-content-heading {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+.rules-text,
+.example-text {
+  font-size: 1.5rem;
+}
+.rules-list li {
+  list-style-type: square;
+  font-size: 1.5rem;
+  margin-left: 2rem;
+}
+.learn-more {
+  margin: 20px 0px;
+}
+.main-content-left-side-learn-more {
+  margin: 2rem 0;
+}
+.main-content-left-side-learn-more a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  background-color: rgb(242, 242, 234);
+  border: 0.1rem solid black;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: #c7ccd0;
+}
+.main-content-right-side {
+  width: 40rem;
+  box-shadow: rgba(107, 105, 105, 0.35) 0.1rem 0.5rem 1rem;
+  border-radius: 2rem;
+  font-size: 1.5rem;
+}
+.div-main-content-right-side-results {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.guess-result {
+  height: 30rem;
+  overflow: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.guess-result li {
+  padding-right: 1rem;
+}
